@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Світло: політика конфіденційності / Privacy Policy</title>
+<meta name="description" content="Політика конфіденційності застосунку «Світло» для Android / Privacy Policy of the Svitlo Android app">
+<style>
+  :root { --bg:#ffffff; --fg:#0f1b33; --muted:#4a5675; --link:#1f4fd8; --line:#e1e6f0; --card:#f4f6fa; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0b1020; --fg:#e8ecf6; --muted:#a9b4ce; --link:#8fa9ff; --line:#2a3350; --card:#151c30; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { font-size:1.9rem; line-height:1.25; margin:0 0 8px; }
+  h2 { font-size:1.25rem; margin:32px 0 8px; }
+  p, li { margin:8px 0; }
+  a { color:var(--link); }
+  .muted { color:var(--muted); }
+  nav { display:flex; gap:12px; margin:16px 0 24px; flex-wrap:wrap; }
+  nav a { display:inline-block; padding:10px 16px; border:2px solid var(--fg); border-radius:10px; text-decoration:none; color:var(--fg); font-weight:600; min-height:24px; }
+  .note { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px 16px; }
+  section + section { margin-top:56px; padding-top:32px; border-top:2px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+
+<nav aria-label="Мова / Language">
+  <a href="#uk" hreflang="uk">Українська</a>
+  <a href="#en" hreflang="en">English</a>
+</nav>
+
+<section id="uk" lang="uk">
+  <h1>Політика конфіденційності застосунку «Світло»</h1>
+  <p class="muted">Застосунок для Android, ідентифікатор пакета: ua.svitlo.app. Остання редакція: [17.11.2026].</p>
+
+  <h2>Коротко</h2>
+  <p>«Світло» показує графік планових відключень електроенергії для обраної вами групи й надсилає сповіщення. Застосунок не потребує акаунта, не показує рекламу, не збирає аналітику й не містить сторонніх SDK для відстеження. Розробник не отримує жодних ваших даних.</p>
+
+  <h2>1. Розробник і контакт</h2>
+  <p>Розробник: [Lemaryn]. З питань конфіденційності пишіть на [iamlemaryn@gmail.com].</p>
+
+  <h2>2. Дані, що зберігаються на вашому пристрої</h2>
+  <p>Ці дані лишаються лише на вашому телефоні й не надсилаються розробнику:</p>
+  <ul>
+    <li>обраний регіон, оператор і група (наприклад, 5.1) та дата, коли ви її вибрали;</li>
+    <li>налаштування: сповіщення, час попередження, звук, вібрація, великий текст, висока контрастність, режим конфіденційності, тема оформлення;</li>
+    <li>останній отриманий публічний графік відключень (кеш), а також графік попередньої доби, щоб правильно показувати відключення, які переходять через північ;</li>
+    <li>контрольна сума (хеш) закритого вами повідомлення оператора, щоб не показувати його знову; самого тексту повідомлення застосунок не зберігає.</li>
+  </ul>
+  <p>Застосунок вимкнув автоматичне резервне копіювання (allowBackup), тому ці дані не потрапляють у хмарні резервні копії. Видалення застосунку або очищення його даних у налаштуваннях телефона стирає все перелічене.</p>
+
+  <h2>3. Мережеві запити</h2>
+  <p>Для отримання графіка застосунок звертається до відкритого публічного інтерфейсу сервісу YASNO (app.yasno.ua). До запиту входять лише ідентифікатор регіону й оператора та загальний заголовок User-Agent із назвою й версією застосунку. Графіки всіх груп оператора завантажуються одним запитом, а вашу групу застосунок обирає локально, тому сервер не отримує інформації про те, яку групу ви обрали.</p>
+  <p>Як і будь-який інтернет-сервер, YASNO технічно бачить IP-адресу пристрою, з якого надійшов запит. Це регулюється політикою цього сервісу, а не розробника застосунку. Застосунок також може запитувати від оператора загальне повідомлення (наприклад, про аварію), яке не залежить від вашої групи чи адреси.</p>
+  <p>Усі запити виконуються через захищене з'єднання (HTTPS).</p>
+
+  <h2>4. Адреса (лише якщо ви не знаєте свою групу)</h2>
+  <p>Якщо ви вибираєте «Ні, не знаю» й визначаєте групу за адресою, застосунок надсилає на сервер YASNO:</p>
+  <ul>
+    <li>початок назви вулиці (і, де потрібно, обране місто), щоб отримати підказки;</li>
+    <li>ідентифікатори обраних міста, вулиці та будинку, щоб визначити групу.</li>
+  </ul>
+  <p>Це потрібно один раз. Застосунок <strong>не зберігає</strong> адресу: ні текст, ні ідентифікатори не записуються на пристрій і не потрапляють у журнали; після відповіді їх стирають із пам'яті. Збережеться лише знайдена група. Розробник цих даних не отримує.</p>
+
+  <h2>5. Дозволи</h2>
+  <ul>
+    <li><strong>Сповіщення:</strong> щоб повідомляти про вимкнення й увімкнення світла. Ви можете вимкнути їх у налаштуваннях застосунку чи телефона.</li>
+    <li><strong>Точні будильники:</strong> щоб сповіщення приходили вчасно, у момент, який ви обрали.</li>
+    <li><strong>Запуск після перезавантаження телефона:</strong> щоб відновити заплановані сповіщення.</li>
+    <li><strong>Доступ до мережі:</strong> щоб оновлювати графік.</li>
+  </ul>
+  <p>Застосунок не просить доступу до геолокації, контактів, камери, мікрофона, файлів чи інших особистих даних.</p>
+
+  <h2>6. Чого в застосунку немає</h2>
+  <p>Немає акаунтів і реєстрації, реклами, аналітики, відстеження, продажу чи передачі даних третім особам. Розробник не отримує жодних персональних даних.</p>
+
+  <h2>7. Посилання на сайти операторів</h2>
+  <p>Застосунок може містити кнопки, що відкривають у браузері зовнішні сайти (наприклад, сайт оператора чи ДТЕК). Після переходу діє політика конфіденційності відповідного сайту. Сам застосунок ці сайти не викликає й не передає їм дані.</p>
+
+  <h2>8. Діти</h2>
+  <p>Застосунок не призначений спеціально для дітей і не збирає жодних даних про них.</p>
+
+  <h2>9. Джерело даних і застереження</h2>
+  <p>Графіки відключень надходять із неофіційного публічного інтерфейсу YASNO і можуть змінюватися чи бути неточними. Застосунок показує лише планові відключення, але не аварійні. Застосунок неофіційний і не пов'язаний із YASNO, ДнЕМ, ЦЕК чи ДТЕК. Перевіряйте важливу інформацію на сайті свого оператора.</p>
+
+  <h2>10. Зміни політики</h2>
+  <p>Якщо політика зміниться, нова редакція з'явиться на цій сторінці з оновленою датою.</p>
+
+  <h2>11. Google Play</h2>
+  <p>Встановлення застосунку через Google Play регулюється окремою політикою Google. Розробник отримує від Google лише знеособлену статистику встановлень, яка не містить персональних даних.</p>
+</section>
+
+<section id="en" lang="en">
+  <h1>Svitlo App Privacy Policy</h1>
+  <p class="muted">Android app, package name: ua.svitlo.app. Last updated: [DATE, e.g. 17 Nov 2026].</p>
+
+  <h2>In short</h2>
+  <p>Svitlo shows the planned power outage schedule for the group you choose and sends notifications. The app needs no account, shows no ads, collects no analytics and contains no third-party tracking SDKs. The developer does not receive any of your data.</p>
+
+  <h2>1. Developer and contact</h2>
+  <p>Developer: [Lemaryn]. For privacy questions, write to [iamlemaryn@gmail.com].</p>
+
+  <h2>2. Data stored on your device</h2>
+  <p>This data stays on your phone and is never sent to the developer:</p>
+  <ul>
+    <li>the selected region, operator and group (for example, 5.1) and the date you chose it;</li>
+    <li>settings: notifications, advance warning time, sound, vibration, large text, high contrast, privacy mode, colour theme;</li>
+    <li>the last public outage schedule received (cache), plus the previous day's schedule, so outages that cross midnight are shown correctly;</li>
+    <li>a checksum (hash) of an operator message you dismissed, so it is not shown again; the app does not store the message text itself.</li>
+  </ul>
+  <p>The app disables automatic backup (allowBackup), so this data is not included in cloud backups. Uninstalling the app or clearing its data in the phone settings deletes all of it.</p>
+
+  <h2>3. Network requests</h2>
+  <p>To get the schedule, the app contacts the public interface of the YASNO service (app.yasno.ua). A request contains only the region and operator identifiers and a generic User-Agent header with the app name and version. Schedules of all groups of an operator are downloaded in one request and your group is selected locally, so the server learns nothing about which group you chose.</p>
+  <p>Like any internet server, YASNO can technically see the IP address of the device that made the request. This is governed by that service's own policy, not by the app developer. The app may also request a general message from the operator (for example, about an outage), which does not depend on your group or address.</p>
+  <p>All requests use a secure connection (HTTPS).</p>
+
+  <h2>4. Address (only if you do not know your group)</h2>
+  <p>If you choose "No, I don't know" and determine your group by address, the app sends to the YASNO server:</p>
+  <ul>
+    <li>the beginning of a street name (and, where required, the selected city) to get suggestions;</li>
+    <li>the identifiers of the selected city, street and house to determine the group.</li>
+  </ul>
+  <p>This is needed only once. The app <strong>does not store</strong> the address: neither the text nor the identifiers are written to the device or to logs, and they are cleared from memory after the response. Only the resulting group is saved. The developer does not receive this data.</p>
+
+  <h2>5. Permissions</h2>
+  <ul>
+    <li><strong>Notifications:</strong> to tell you when power goes off and comes back. You can turn them off in the app or phone settings.</li>
+    <li><strong>Exact alarms:</strong> so notifications arrive at the time you chose.</li>
+    <li><strong>Run after device restart:</strong> to restore scheduled notifications.</li>
+    <li><strong>Network access:</strong> to update the schedule.</li>
+  </ul>
+  <p>The app does not ask for location, contacts, camera, microphone, files or other personal data.</p>
+
+  <h2>6. What the app does not have</h2>
+  <p>No accounts or registration, no ads, no analytics, no tracking, no selling or sharing of data with third parties. The developer does not receive any personal data.</p>
+
+  <h2>7. Links to operator websites</h2>
+  <p>The app may contain buttons that open external websites in your browser (for example, the operator's or DTEK's site). Once you leave the app, that site's own privacy policy applies. The app itself does not call these sites or pass data to them.</p>
+
+  <h2>8. Children</h2>
+  <p>The app is not specifically aimed at children and does not collect any data about them.</p>
+
+  <h2>9. Data source and disclaimer</h2>
+  <p>Outage schedules come from an unofficial public YASNO interface and may change or be inaccurate. The app shows only planned outages, not emergency ones. The app is unofficial and is not affiliated with YASNO, DnEM, CEK or DTEK. Please verify important information on your operator's website.</p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>If this policy changes, the new version will appear on this page with an updated date.</p>
+
+  <h2>11. Google Play</h2>
+  <p>Installing the app through Google Play is governed by Google's own policy. The developer receives only anonymous installation statistics from Google, which contain no personal data.</p>
+</section>
+
+</main>
+</body>
+</html>
